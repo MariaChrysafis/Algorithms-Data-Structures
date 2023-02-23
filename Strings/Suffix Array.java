@@ -1,6 +1,13 @@
+/*
+About: Suffix Array
+Complexity: O(N logN^2)
+Date: February 22nd, 2023
+Verified: https://judge.yosupo.jp/submission/127391
+*/
+
 public static class SuffixArray {
     String s;
-    SuffixArray (String s) { //various equivalence classes
+    SuffixArray (String s) { 
         this.s = s + '$';
         int n = this.s.length();
         int[] equivalence_class = new int[n];
